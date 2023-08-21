@@ -5,11 +5,15 @@ body {
 }
 
 .profile-img {
-    height: max-content;
-    width: max-content;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
 }
 
+.image-div {
+    display: flex;
+    justify-content: end;
+}
 
 .dark-background {
     background-color: rgba(0,0,0,.8);
@@ -22,6 +26,7 @@ body {
 .header-background {
     background-color: #3A3934;
     height: 100vh;
+  
 
 }
 
@@ -36,13 +41,19 @@ body {
     color: #A7AFBD;
 }
 
-.Text-div  {
+/* .Text-div  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
+
+@media (max-width: 868px) {
+    .profile-img {
+        width: 100%;
+    }
+}
 
 
 
