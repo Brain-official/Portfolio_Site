@@ -13,6 +13,7 @@ body {
 .image-div {
     display: flex;
     justify-content: end;
+    position: relative;
 }
 
 .dark-background {
@@ -47,6 +48,45 @@ body {
     justify-content: center;
     align-items: center;
 } */
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+.first-animation {
+    position: absolute;
+    background-color: #FF451B;
+    height: 7.5rem;
+    width: 4rem;
+    left: 110px;
+    top: 180px;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+  
+  /* Apply the animation to an element */
+
+
+
+
 
 
 @media (max-width: 868px) {
