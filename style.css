@@ -8,12 +8,14 @@ body {
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    z-index: 3;
 }
 
 .image-div {
     display: flex;
     justify-content: end;
     position: relative;
+    
 }
 
 .dark-background {
@@ -71,18 +73,87 @@ body {
 
 .first-animation {
     position: absolute;
-    background-color: #FF451B;
+    background-color: #FFB324   ;
     height: 7.5rem;
-    width: 4rem;
+    width: 5rem;
     left: 110px;
     top: 180px;
     animation-name: slide;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    z-index: 4;
+}
+
+
+
+
+@keyframes slide-two {
+    0% {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+
+.second-animation {
+    background-color: #FFB324;
+    height: 8.5rem;
+    width: 5rem;
+    position: absolute;
+    right: 100px;
+    z-index: 1;
+
+    animation-name: slide-two;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+    
+}
+
+
+
+.third-animation {
+    background-color: #FF451B;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    left: 20%;
+    z-index: 6;
+    transform: rotate(45deg);
+
+    animation-name: slide-three;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+  
+}
+
+
+
+@keyframes slide-three {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
   
-  /* Apply the animation to an element */
+
+
 
 
 
