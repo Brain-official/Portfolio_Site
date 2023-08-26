@@ -271,35 +271,37 @@ body {
 }
 
 
-.About-me-dropdown {
+.dropdown {
     width: 100%;
     background-color: #494B50;
     border-radius: 1.1rem;
     
 }
 
-.About-me-dropdown .svg  {
+.dropdown .svg  {
     background-color: #FF451B;
     padding: 1.1rem;
     border-radius: 1.1rem;
     display: flex;
     justify-content: center;
+    width: 20%;
 }
 
-.About-me-dropdown .toggle-div {
+.dropdown .toggle-div {
     background-color: #FFB324;
     /* margin-left: 33%; */
     border-radius: 1.1rem;
-    width: 79%;
+    width: 70%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+    left: 8%;
 }
 
 
-.About-me-dropdown:hover {
+.dropdown:hover {
     .svg {
         background-color: #FFB324;
     }
@@ -323,33 +325,28 @@ body {
 .card-body {
     background-color: #494B50;
 }
-/* .About-me-dropdown svg{
-    background-color: #FF451B;
-    padding: 1.2rem;
-    border-radius: 1.1rem;
-} */
 
 
 
-/* .button-design {
-    width: 90%;
-    background-color: #494B50;
-    height: 85px;
-    border-radius: 1.2rem;
-    text-align: left;
-    padding: 1.6rem;
-    color: #fff;
-}
 
-.button-design:hover{
-    background-color: #FF451B;
-    color: #fff;
-} */
 
 
 @media (max-width: 868px) {
-   
+   .dropdown .svg {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+   }
 
+   .dropdown .toggle-div {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: static;
+    width: 80%;
+   }
+
+   .dropdown {
+    width: auto;
+   }
 }
 
 
