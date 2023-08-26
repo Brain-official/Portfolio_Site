@@ -353,6 +353,45 @@ body {
 
 
 
+/************** dropdown texts design ************/
+
+.dropdown-text h3{ 
+    color: #FF451B;
+    font-weight: 700;
+}
+
+
+.dropdown-text h1 {
+    color: #fff;
+    margin-top: .7rem;
+}
+
+.dropdown-text h4{
+    color: #D3D7DF;
+    margin-top: 1rem;
+}
+
+
+.dropdown-text .textparagraph {
+    color: #A7AFBD;
+    margin-top: 1.3rem;
+}
+
+.form-dropdown {
+    background-color: #FF451B;
+    border-radius: 1.1rem;
+    padding: 1.2rem;
+}
+
+.Titles {
+    color: #A7AFBD;
+}
+
+.form-dropdown .info {
+    color: #fff;
+}
+
+
 
 
 
