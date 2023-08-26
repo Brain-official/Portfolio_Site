@@ -267,7 +267,7 @@ body {
 /**************** the dropdown section *****************************/
 
 .dropdown-section {
-    height: 100vh;
+    height: auto;
 }
 
 
